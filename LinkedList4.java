@@ -9,46 +9,42 @@ class Node
     }
 }
  
-//Linked list class
+
 class LinkedList4
 {
-    Node head;    //Head of list
- 
-    //Inserts a new node at the front of the list
+    Node head;    
     public void push(int new_data)
     {
-        //Allocate new node and putting data
+        
         Node new_node = new Node(new_data);
  
-        //Make next of new node as head
+       
         new_node.next = head;
  
-        //Move the head to point to new Node
+        
         head = new_node;
     }
  
-    //Checks whether the value x is present in linked list
+   
     public boolean search(Node head, int x)
     {
-        Node current = head;    //Initialize current
+        Node current = head;   
         while (current != null)
         {
             if (current.data == x)
-                return true;    //data found
+                return true;   
             current = current.next;
         }
-        return false;    //data not found
+        return false;   
     }
  
-    //Driver function to test the above functions
+   
     public static void main(String args[])
     {
- 
-        //Start with the empty list
+
         LinkedList4 llist = new LinkedList4();
  
-        /*Use push() to construct below list
-        14->21->11->30->10  */
+       
         llist.push(10);
         llist.push(30);
         llist.push(11);
