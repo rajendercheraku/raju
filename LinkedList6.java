@@ -1,8 +1,8 @@
 class LinkedList6
 {
-    Node head; // head of linked list
+    Node head; 
  
-    /* Linked list node */
+   
     class Node
     {
         int data;
@@ -14,7 +14,7 @@ class LinkedList6
         }
     }
  
-    /* Function to print middle of linked list */
+   
     void printMiddle()
     {
         Node slow_ptr = head;
@@ -31,22 +31,20 @@ class LinkedList6
         }
     }
  
-    /* Inserts a new Node at front of the list. */
+   
     public void push(int new_data)
     {
-        /* 1 & 2: Allocate the Node &
-                  Put in the data*/
+       
         Node new_node = new Node(new_data);
  
-        /* 3. Make next of new Node as head */
+      
         new_node.next = head;
  
-        /* 4. Move the head to point to new Node */
+      
         head = new_node;
     }
  
-    /* This function prints contents of linked list
-       starting from  the given node */
+   
     public void printList()
     {
         Node tnode = head;
